@@ -1,5 +1,3 @@
-# FCC-HTML-Page
-
 <h2>CatPhotoApp</h2>
 <main>
   <p>Click here to view more <a href="#">cat photos</a>.</p>
@@ -18,8 +16,14 @@
     <li>thunder</li>
     <li>other cats</li>
   </ol>
+  
   <form action="/submit-cat-photo">
-    <input type="text" placeholder="cat photo URL">
+    <label><input type="radio" name="indoor-outdoor" checked> Indoor</label>
+    <label><input type="radio" name="indoor-outdoor"> Outdoor</label><br>
+    <label><input type="checkbox" name="personality" checked> Loving</label>
+    <label><input type="checkbox" name="personality"> Lazy</label>
+    <label><input type="checkbox" name="personality"> Energetic</label><br>
+    <input type="text" placeholder="cat photo URL" required>
     <button type="submit">Submit</button>
   </form>
 </main>
